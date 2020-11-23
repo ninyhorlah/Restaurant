@@ -17,6 +17,7 @@ body {
 .order-container {
   margin: auto;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 .profile-container {
@@ -174,6 +175,9 @@ body {
 }
 
 @media screen and (max-width: 969px) {
+  .about {
+    padding: 30px 10px;
+  }
   .inner-profile {
     display: block;
   }
@@ -185,13 +189,14 @@ body {
   .customer-wrapper {
     display: flex;
     flex-direction: column-reverse;
+    padding-bottom: 10px;
   }
   .customer-wrapper img {
     width: 70%;
   }
 
   .customer {
-    padding: 40px;
+    padding: 40px 40px 20px 40px;
     margin: auto;
     font-size: 14px;
   }
@@ -200,5 +205,18 @@ body {
   }
   .summary div {
     font-size: 12px;
+  }
+  .content {
+    width: 90%;
+  }
+  /* .head div {
+    padding: 5px;
+  } */
+}
+
+@media screen and (max-width: 420px) {
+  .items .summary div {
+    font-size: 7px;
+    font-weight: 900;
   }
 }
