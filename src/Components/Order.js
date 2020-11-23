@@ -115,7 +115,7 @@ const Order = () => {
                             <div>Quantity</div>
                         </div>
                         <p> {name}</p>
-                        <div className="summary">
+                        <div className="summary total">
                             <div>Total</div>
                             <div></div>
                             <div></div>
