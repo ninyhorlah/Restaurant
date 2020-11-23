@@ -223,7 +223,20 @@ body {
 
 @media screen and (max-width: 420px) {
   .items .summary div {
-    font-size: 7px;
+    font-size: 10px;
+  }
+
+  .items .head div,
+  .items .total div {
     font-weight: 900;
+  }
+
+  .product-img,
+  .hide {
+    display: none;
+  }
+
+  .restaurant .details {
+    font-size: 12px;
   }
 }

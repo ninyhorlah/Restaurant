@@ -107,7 +107,7 @@ const Order = () => {
                         <div className="summary head">
                             <div>Item No</div>
                             <div>Product Name</div>
-                            <div>Product Image</div>
+                            <div className='hide'>Product Image</div>
                             <div>Category</div>
                             <div>price</div>
                             <div>Currency</div>
