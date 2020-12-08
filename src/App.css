@@ -113,6 +113,10 @@ body {
   flex-wrap: wrap;
 }
 
+.restaurant .details p {
+  padding: 5px 10px;
+}
+
 .customer {
   padding: 40px 10px 40px 120px;
   margin: auto auto auto 30px;
@@ -121,6 +125,7 @@ body {
 .details div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 10px 5px;
 }
 
 .items {
@@ -134,7 +139,6 @@ body {
 }
 
 .summary div {
-  /* border: 1px solid #555; */
   height: 80px;
   width: 160px;
   font-size: 14px;
@@ -170,7 +174,7 @@ body {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
   align-items: center;
-  margin: auto;
+  margin: 50px auto;
   display: flex;
   justify-content: center;
 }

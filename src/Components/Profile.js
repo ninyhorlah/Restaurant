@@ -57,7 +57,7 @@ if(profile.data){
 
                 <Link to='/order'   onClick={() => <Order/>}>
                     <div className='button'>
-                        <button>Explore</button>
+                        <button>View Order Summary</button>
                     </div>
                 </Link>
             </div>
