@@ -1,32 +1,15 @@
-import React, {useState,useEffect} from 'react'
-import axios from 'axios'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Profile from './Profile'
 import Loader from './Loader'
+import { useAxiosGet } from '../Hooks/HttpRequest'
 
 const Order = () => {
     const url = 'https://indapi.kumba.io/webdev/assignment';
 
-    const[order, setOrder] = useState({
-        loading: true,
-        data: null
-    })
+    let order = useAxiosGet(url)
 
     let content = null;
-
-    useEffect(() => {
-        setOrder({
-            loading: true,
-            data: null
-        })
-        axios.get(url)
-        .then(response => {
-            setOrder({
-                loading: false,
-                data: response.data
-            })
-        })
-    }, [url])
 
     if(order.loading){
         content = <div>

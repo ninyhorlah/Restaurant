@@ -1,31 +1,17 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Order from './Order'
 import Loader from './Loader'
+import { useAxiosGet } from '../Hooks/HttpRequest'
 
 const Profile = () => {
 const url = 'https://indapi.kumba.io/webdev/assignment';
 
-const[profile, setProfile] = useState({
-    loading: true,
-    data: null
-});
+let profile = useAxiosGet(url)
+
 let content = null; 
 
-useEffect(() => {
-    setProfile({
-        loading: true,
-        data: null
-    })
-    axios.get(url)
-    .then(result => {
-        setProfile({
-            loading: false,
-            data: result.data
-        })
-    })
-}, [url])
+
 
 if(profile.loading){
     content = <div>
